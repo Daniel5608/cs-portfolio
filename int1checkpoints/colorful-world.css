@@ -1,0 +1,44 @@
+body {
+    background-image: url(http://www.publicdomainpictures.net/pictures/60000/velka/stripes-orange-blue-background.jpg);
+    color: black;
+    
+    margin: 75px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+
+.list-center {
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+
+.list-center ul {
+    text-align: left;
+}
+
+
+
+
+.center {
+    margin: 20px
+}
+
+
+
+
+.row {
+    display: inline-block;
+    width: 33%;
+}
+.row img {
+    width: 100%;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Art How to Page</title>
+    <link rel="stylesheet" href="generativeart.css" type="text/css" />
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
+</head>
+<body>
+        <ul class="navbar">
+            <a href="index.html"> <li>About Me</li></a>
+            <a href="howtoaboutme.html"> <li>How To - About Me</li></a>
+            <a href="generativeart.js"> <li>Generative Art</li></a>
+            <a href="howtoaboutmeart.html"> <li>How To - Generative Art</li></a>
+        </ul>
+    <div class="box">
+        <h1>How to Page for My Generative Art Project</h1>
+        <h2> My Function </h2>
+        <img src = "int2checkpoint2/images2/function.png">
+        <p>In the first requirement I created a image of a spaceship in the very 
+        center of the window(keep in mind the entire window <br>is 1000 by 1000) using 
+        rectangles with no stroke. I colored and positioned the rectangles accordingly 
+        to come together to actually look like a spaceship. After I positioned all the 
+        rectangles in the center of the window I created a function by entering my own 
+        function into my code. I did this by entering drawSpaceship = function() { before 
+        the all the rectangles and }; to end the code. Next I changed all the x and y values 
+        for each rectangle to be relative to 500 so each value of x and y would be either 500 
+        + a number or 500 - a number. The reason I did is so that later on when I drag the mouse 
+        the spaceship follows the mouse exactly. After changing the values of the x and y to 
+        become relative to 500, I enter x,y into the parenthesis in the beginning of the function, 
+        where I named it, so that it became drawSpaceship = function<strong>(x,y)</strong>. After 
+        this you change every 500 in the x and y values to x and y as shown in the image.</p>
+        <img src = "int2checkpoint2/images2/mousemovement.png">
+        <p>Next you set up the actual spaceship movement by setting it so that your function is drawn 
+        where your mouse is; therefore, you enter mouseX and mouseY as the x position and y position 
+        for your function(you put the entire code, as shown in the image, in your draw function). </p>
+        <img src = "int2checkpoint2/images2/SpaceshipMovement.gif" height = "400" width = "400">
+        <p>As you can see all these steps that I took were meant to make the spaceship follow your mouse 
+        whenever you move it. This is the function that I chose to include in my project to cause the 
+        spaceship to follow the mouse.</p>
+        <br>
+        <h2>My Interaction and Loop</h2>
+        <p>Next I decided I wanted the spaceship to be able to fire red missiles when you click, so I first 
+        created a variable called misslesArray. </p>
+        <img src = "int2checkpoint2/images2/missilesArrayVariable.png" height="25">
+        <p>Next, after the variable misslesArray was created I made a mouseClicked function. Inside it I typed missilesArray.push
+        which adds itmes to the end of the array constantly. Inside the array I put a list that consisted of the xPos being mouseX 
+        first, then the yPos being mouseY-100 so that the red bullet starts at the top of the spaceship rather in the middle of the spaceship.
+        Third in the array I put a move function and inside that, I put this.yPos =- 10 so that whenever I click, the y of the missile moves 
+        upwards toward 0 on the y axis. Next in the array as the last item I put a draw function and inside that I entered the actual missile 
+        that would be fired from the spaceship and I colored it red. </p>
+        <img src = "int2checkpoint2/images2/MisslesFire.png">
+        <p>In all the project looked like a spaceship that follows the mouse movement 
+        and fires missiles when clicked.</p>
+        <img src = "int2checkpoint2/images2/SpaceshipShooting.gif" width="350" height="350">
+        <p>However, there still was a problem. The push function keeps drawing more and more missiles, but the missiles are not getting deleted, 
+        so this lags the computer. What I did to fix this problem was I created code, with a for loop, that deleted the missiles whenever they 
+        moved off the screen. Inside the for loop I created a variable called i and set it to 0. Then as my conditional statement i entered i 
+        is less than misslesArray.length. As the last statement of the for loop I entered i++. Inside the for loop I put the move and draw function 
+        used in the mouseClicked function and set them dependent on the variable i by entering i into the brackets after missilesArray. Finally, I 
+        put an if statement, based on if missilesArray[i].yPos is less than 0, that has missilesArray.splice(i,1). .splice is meant to delete the 
+        missiles after they reach the point below 0 on the y-axis. The i and 1 in the parenthesis tells missilesArray how to splice the missile.</p>
+        <img src = "int2checkpoint2/images2/SpaceshipSplice.png">
+        <br>
+        <h2>My If Statements </h2>     
+        <p>Next I decided to make the spaceship look like it is in actual space with stars. To do this I created exactly 6 variables equal to negative 
+        numbers, ordered from least to greatest, that are each larger than the one before it by a similar number. Then I created 18 ellipses inside the 
+        draw function, f for the first three y coordinate, c for the next three y coordinates, a for the next, then d, then b, and finally n for the last 
+        three coordinates of the y axis for the last three ellipses. The x-axis coordinates are created to be positioned accordingly to look like stars that are spread out, while 
+        the height is generally the same for all the ellipses and the width is as well. After the coordinates and ellipses were all written out I added every 
+        variable equals the variable plus 20 so the stars are moving down by 20 constantly. Finally, to create a kind of loop, I made 6 if statements in which 
+        I entered if any of the variables becomes larger than 1000 then they reset to their original values. So the stars basically move down and after they 
+        move off the screen, they go back to their original positions; furthermore, creating a kind of loop. </p>
+        <img src = "int2checkpoint2/images2/stars.png">
+        <img src = "int2checkpoint2/images2/stars2.png">
+        <br> 
+        <p>Basically the final product ended up looking like this:</p>
+        <img src = "int2checkpoint2/images2/SpaceshipFire.gif" width="350" height="350">
+        
+    </div>
+    
+    
+    
+    
+    
+</body>
+</html> 

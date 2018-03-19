@@ -1,0 +1,96 @@
+body {
+    background-image:url(http://cdn.pcwallart.com/images/the-color-sky-blue-wallpaper-3.jpg);
+    color:black;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+p {
+    width:40%;
+    font-size:125%;
+}
+
+
+.container > * {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+
+.box {
+    padding: 10px;
+    border: 15px solid lightblue;
+    border-radius:15px;
+    margin-left:15%;
+    margin-right:15%;
+    background-color: white;
+}
+
+
+.wil{
+    text-align:left;
+}
+
+
+.box2{
+    padding: 10px;
+    border: 15px solid lightblue;
+    border-radius:15px;
+    margin-left:15%;
+    margin-right:15%;
+    background-color: white;
+}
+
+.in1 > * {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+
+.e1{
+    padding:4px;
+    background-color:red;
+    border: 2px solid crimson;
+}
+.e2{
+    padding:4px;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+.e3{
+    padding:4px;
+    border: 2px solid green;
+    background-color:lightgreen;
+    
+}
+
+    
+
+
+.in1 > * {
+    display: inline-block;
+    vertical-align: text-top;
+}
+.block1{
+    text-align: right;
+}
+
+.in2 > * {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.in4 > * {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.in5 > * {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
